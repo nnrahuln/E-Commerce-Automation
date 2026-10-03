@@ -34,3 +34,18 @@ jobs:
       - name: Run UI tests
         run: |
           pytest tests/ui -v
+                - name: Run UI tests
+        run: |
+          pytest tests/ui -v
+
+      - name: Generate HTML report
+        if: always()
+        run: |
+          pytest tests/api tests/ui --html=reports/ci_report.html --self-contained-html
+
+      - name: Upload HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pytest-html-report
+          path: reports/ci_report.html
