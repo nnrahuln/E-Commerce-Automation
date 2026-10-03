@@ -34,9 +34,6 @@ jobs:
       - name: Run UI tests
         run: |
           pytest tests/ui -v
-                - name: Run UI tests
-        run: |
-          pytest tests/ui -v
 
       - name: Generate HTML report
         if: always()
