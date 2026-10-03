@@ -4,6 +4,10 @@ End-to-end **E-Commerce test automation framework** built using **Python, Playwr
 
 This project automates critical e-commerce workflows such as login, product selection, cart validation, checkout, and API testing. It also generates HTML test reports and automatically executes tests through GitHub Actions.
 
+## 🌐 Live Demo
+
+[🌐 Open E-Commerce Website](https://www.saucedemo.com/)
+
 ---
 
 ## 🚀 Project Overview
